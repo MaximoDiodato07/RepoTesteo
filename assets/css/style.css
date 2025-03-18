@@ -205,13 +205,9 @@ body{
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center; 
-    gap: auto;
+    gap: 12px 5px;
 }
 
-.card-container::after{
-    content: "";
-    flex-basis: 100%; /* Añade un espacio adicional para evitar que se quede vacío */
-}
 
 @media screen and (max-width: 855px){
 
