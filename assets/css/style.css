@@ -204,8 +204,14 @@ body{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-evenly;
-    gap: 50px 20px;
+    justify-content: start;
+    align-items: flex-start;
+    gap: 50px auto;
+}
+
+.card-container::after{
+    content: "";
+    flex-basis: 100%; /* Añade un espacio adicional para evitar que se quede vacío */
 }
 
 @media screen and (max-width: 855px){
@@ -229,6 +235,7 @@ body{
     border: 1px solid var(--main-color);
     gap: 5%;
     transition: all 0.3s ease-in-out;
+    margin: 2px;
 
     &:hover{
         transform: translateY(-5px);

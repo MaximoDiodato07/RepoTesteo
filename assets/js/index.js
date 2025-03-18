@@ -3,7 +3,7 @@
 // -----------------------------------------
 let cardContainer = document.querySelector('.card-container');
 
-for(let i = 0; i < 6; i++){
+for(let i = 0; i < 5; i++){
     let card = document.createElement('div');
     card.classList.add('card');
 
