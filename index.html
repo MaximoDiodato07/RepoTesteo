@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <!-- Estilados -->
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <!-- CDN Para Sliders -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+
+    </head>
+
+    <body>
+        <div class="nav"> </div>
+        
+         <!-- Contenido del Slider/carousel -->
+        <div class="carousel">
+           
+             <!-- Swiper -->
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <!-- Generados de JS -->
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+
+
+
+        <div class="main-content"> 
+
+            <!-- Contenedor del listado -->
+            <div class="list-container"> 
+                <div class="title-container"> 
+                    <p> Listado de Proveedores</p>
+                </div>
+                
+                <div class="content-container"> 
+                    <!-- Contenido de filtros-->
+                
+                    <form action="" class="filter-container" id="filter-form">
+                        <!-- Rubro -->
+                        <div class="filter-groups">
+                            <p> Rubro </p>
+                            <select id="rubro"> 
+                                <option value="opcion1">Opción 1</option>
+                                <option value="opcion2">Opción 2</option>
+                                <option value="opcion3">Opción 3</option>
+                            </select>
+                        </div>
+
+                        <!-- Ciudad -->
+                        <div class="filter-groups">
+                            <p> Ciudad </p>
+                            <select id="ciudad"> 
+                                <option value="opcion1">Opción 1</option>
+                                <option value="opcion2">Opción 2</option>
+                                <option value="opcion3">Opción 3</option>
+                            </select>
+                        </div>
+
+                        <!-- Nombre -->
+                        <div class="filter-groups">
+                            <p> Nombre </p>
+                            <input type="text" placeholder="" id="nombre">
+                        </div>
+
+                        <!-- Boton Buscar -->
+                        <div class="filter-groups">
+                            <button type="submit" > 
+                                Filtrar
+                            </button>
+                        </div>
+                    </form>
+                    
+
+                    <!-- Contenido de cartas-->
+                    <div class="card-container">
+
+                        <!-- Generado desde JS -->
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        
+        <div class="footer"> 
+            <p>
+                &copy; 2023 130S Desarrollo Web. Transformando el futuro digital, un proyecto a la vez.
+            </p>
+        </div>
+
+
+        <script src="assets/js/index.js"> </script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="assets/js/swiper.js"></script>
+    </body>
+
+    <script>
+        var swiper = new Swiper('.swiper', {
+            loop: true, // Si quieres que el slider sea un loop infinito
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+       
+
+
+</html>
